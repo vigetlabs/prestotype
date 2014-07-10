@@ -1,51 +1,51 @@
 # The problems of prototyping in HTML
 
-Prestotype is a boilerplate that tries to solve some of the unique problems of prototyping by coding HTML/CSS/JS.
+Prestotype is a boilerplate that tries to solve some of the unique problems of prototyping designs in HTML/CSS/JS.
 
-- [Narrowing concerns](#narrowing-concerns)
+- [Limited concerns](#limited-concerns)
 - [Your environment](#environment)
 - [What libraries to use](#what-libraries-to-use)
 - [Reusing code](#reusing-code)
 
 <hr>
 
-## Narrowing concerns
+## Limited concerns
 
-HTML/CSS/JS prototyping is a specific type of web development that doesn't have much in common with what most developers do. Therefore, the tools you find for working on the web may have quirks or extra configuration that doesn't concern you. When you're building a UI prototype in HTML, you're probably not concerned with:
+HTML/CSS/JS prototyping is a _specific type_ of web development that doesn't have much in common with what most developers do. When you're building a UI prototype in HTML, you're probably not concerned with:
 
 * Performance (file size, concatenation, minification, # of library files)
 * Browser compatibility
 * Accessibility
-* Code re-use (to an extent)
-* Users without JS
+* Code re-use and cleanliness
+* No-JS/CSS users
+* Semantics
 
-Keep this in mind when working and selecting tools and tutoraials - ones that focus on these issues might be a waste of your time. Instead, you want options that:
+Keep this in mind when working and selecting tools and tutorials - ones that focus too much on these issues might be a waste of your time. Instead, you want options that:
 
-* Have a lot of 'drop-in' features
+* Are easy to use
+* Have a drop-in features
+* Are heavily styleable
 * Have strong documentation
 * Don't have incompatibility issues with other tools
-* Don't define too many styles or behaviors without being asked
+* Don't define too many styles or behaviors without asking
 
 <hr>
 
 ## Environment
 
-### Configuration
+### Tools
 
-Modern web tools require a lot of technologies, and ideally, someone intending to create HTML prototypes can install node, npm, and ruby on their machine. HOWEVER, Prestotype assumes you can't - you should be able to use this configuration without modifying your machine.
+Modern front-end development involves require a lot of build tools, and _ideally_, someone creating HTML prototypes would be able to install node, npm, and Ruby in their environment. Unfortunately, this ideal isn't always the case - configuring and managing these tools can be difficult. Some premade apps handle the problem for you, but either cost money or have limiting configurations.
 
-### Serving web pages
+### Servers
 
-Creating a development environment is important when working with HTML, as there are particular restrictions regarding loading files directly with the file:// protocol. Fortunately, Mac users have two easy options:
-
-* [Mamp](http://www.mamp.info/en/) is a simple, installable app that runs a server on your computer. Save document in Mamp's `htdocs` to view them in your browser.
-* [Setting up Apache on your Mac](http://ole.michelsen.dk/blog/setup-local-web-server-apache-php-macos-x-mavericks/) is easier than it sounds (ignore the PHP instructions), and allows you to serve sites from your /Sites directory.
+The ideal way to serve web pages is with a web server. A server gives you more power over partials, states, and other application logic, and it also lifts some of the restrictions that browsers place on local files. Servers aren't hard to set up on your computer, but they still require some configuration.
 
 <hr>
 
 ## What libraries to use?
 
-ALL. OF. THEM. You have no performance concerns when prototyping, so don't worry about including too many files, or files you don't even use. There are only a few issues to consider:
+You have no performance concerns when prototyping, so don't worry about including too many files, or throwing in files you don't even use. There are only a few issues to consider:
 
 * Avoid libraries that collide. This is especially common in CSS, like with Bootstrap and Foundation. The more third-party CSS libraries you include, the more collisions you're likely to run into.
 * Avoid using libraries that want to generate the entire document (React, Angular, potentially Backbone). Prefer libraries that work best with _components_, not _pages_, as they're going to be easier to interact with and overwrite.

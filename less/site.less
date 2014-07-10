@@ -1,0 +1,52 @@
+// lesshat includes a large number of ready-to-use mixins:
+// https://github.com/madebysource/lesshat/blob/master/README.md#list-of-mixins
+@import 'vendor/lesshat';
+@import 'variables';
+
+// -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing:
+	border-box; box-sizing: border-box;
+}
+
+.jumbotron {
+	padding-bottom: 0;
+
+	h1 {
+		color: @teal;
+		font-size: 45px;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		i {
+			font-family: Baskerville, 'Times New Roman';
+			font-size: 80px;
+			font-style: italic;
+			font-weight: normal;
+			letter-spacing: -1px;
+			text-transform: lowercase;
+
+			// this is a LESS mixin
+			.transition(all 0.5 ease-in-out);
+
+			&:hover {
+				color: @teal + 40;
+			}
+		}
+
+		@media screen and (min-width: @breakpoint) {
+			color: @teal - 50;
+		}
+	}
+}
+
+// prevents these objects from overflowing their containers
+img, canvas, iframe, video, svg { max-width: 100%; }
+
+.footer {
+	padding: 15px;
+}
