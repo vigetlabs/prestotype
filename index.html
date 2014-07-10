@@ -1,0 +1,66 @@
+<!doctype html>
+	<head>
+		<title>Page title</title>
+
+		<!-- remove if you're not making this responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+		<!-- bootstrap -->
+		<link href="css/vendor/bootstrap.css" rel="stylesheet">
+		<link href="css/vendor/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/vendor/jquery-ui.css" rel="stylesheet">
+
+		<!-- custom CSS goes here -->
+		<link href="css/site.css" rel="stylesheet">
+
+		<!--
+			http://polymer-project.org reusable, custom HTML tags that provide new functionality to browsers
+			all polymer 'core' and 'paper' components are included.
+			icon included as an example. to learn more, check out:
+			- http://www.polymer-project.org/docs/elements/layout-elements.html
+			- http://www.polymer-project.org/docs/elements/core-elements.html
+
+			individual polymer components are loaded with an import link. you can style them using CSS (see docs)
+		-->
+		<script src="js/vendor/components/platform/platform.js"></script>
+		<!-- -->
+		<link rel="import" href="js/vendor/components/core-icon/core-icon.html">
+		<link rel="import" href="js/vendor/components/core-icons/iconsets/social-icons.html">
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/jquery-ui.js"></script>
+		<script src="js/vendor/underscore.js"></script>
+		<script src="js/vendor/bootstrap.js"></script>
+		<script src="js/vendor/ejs.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="panel">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default">Bootstrap</button>
+					<button type="button" class="btn btn-default">Components</button>
+					<button type="button" class="btn btn-default">Included</button>
+				</div>
+			</div>
+
+			<div class="panel">
+				<p>
+					Polymer components included: <core-icon icon="social:cake" size="10"></core-icon>
+				</p>
+			</div>
+
+			<div class="panel">
+				<p>
+					jQuery UI included: <input type="text" id="datepicker">
+				</p>
+			</div>
+
+			<!-- partials use EJS template language -->
+      <div class="partial" data-partial="partials/footer" data-tall="true"></div>
+		</div>
+	</body>
+	<script src="js/site.js"></script>
+	<script src="js/load-partials.js"></script>
+</html>
