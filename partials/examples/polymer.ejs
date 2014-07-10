@@ -1,0 +1,55 @@
+<!--
+  http://polymer-project.org reusable, custom HTML tags that provide new functionality to browsers
+  all polymer 'core' and 'paper' components are included, and just need to be imported to work
+-->
+
+<link rel="import" href="js/vendor/components/core-collapse/core-collapse.html">
+<link rel="import" href="js/vendor/components/core-tooltip/core-tooltip.html">
+<link rel="import" href="js/vendor/components/core-icon/core-icon.html">
+<link rel="import" href="js/vendor/components/core-icons/iconsets/social-icons.html">
+<link rel="import" href="js/vendor/components/paper-button/paper-button.html">
+<link rel="import" href="js/vendor/components/paper-toast/paper-toast.html">
+<link rel="import" href="js/vendor/components/paper-input/paper-input.html">
+
+<div class="panel panel-default">
+  <header class="panel-heading">
+    <h3 class="panel-title">
+      Polymer component examples
+      <a href="http://www.polymer-project.org/docs/elements/">
+        (docs)
+      </a>
+    </h3>
+  </header>
+  <div class="panel-body">
+    <core-icon icon="social:cake" size="10"></core-icon>
+    <core-icon icon="social:post-pinterest" size="20"></core-icon>
+    <core-icon icon="social:post-twitter" size="30"></core-icon>
+
+    <hr>
+
+    <button class="collapse-content btn btn-default">Toggle collapsed content</button>
+    <core-collapse>
+      Collapsed content
+    </core-collapse>
+
+    <hr>
+
+    <core-tooltip position="right">
+      <button type="button" class="btn btn-default">
+        Tooltip
+      </button>
+      <div tip>
+        Foo <b>Bar</b> - <a href="#">@baz</a>
+      </div>
+    </core-tooltip>
+
+    <hr>
+
+    <paper-input label="Paper input"></paper-input>
+
+    <hr>
+
+    <paper-button class="show-toast" raisedButton label="Click for toast"></paper-button>
+    <paper-toast id="toast1" duration="1500" text="Your toast is ready"></paper-toast>
+  </div>
+</div>

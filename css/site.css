@@ -1,1 +1,2 @@
-/* todo */
+// prevents these objects from overflowing their containers
+img, canvas, iframe, video, svg { max-width: 100%; }
