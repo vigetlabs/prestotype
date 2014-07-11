@@ -24,7 +24,7 @@ Keep this in mind when working and selecting tools and tutorials - ones that foc
 
 * Are easy to use
 * Have a drop-in features
-* Are heavily styleable
+* Are easily styleable
 * Have strong documentation
 * Don't have incompatibility issues with other tools
 * Don't define too many styles or behaviors without asking
@@ -48,18 +48,18 @@ The ideal way to serve web pages is with a web server. A server gives you more p
 You have no performance concerns when prototyping, so don't worry about including too many files, or throwing in files you don't even use. There are only a few issues to consider:
 
 * Avoid libraries that collide. This is especially common in CSS, like with Bootstrap and Foundation. The more third-party CSS libraries you include, the more collisions you're likely to run into.
-* Avoid using libraries that want to generate the entire document (React, Angular, potentially Backbone). Prefer libraries that work best with _components_, not _pages_, as they're going to be easier to interact with and overwrite.
+* Avoid using libraries that want to generate entire documents (React, Angular, potentially Backbone). Prefer libraries that work best with _components_, not _pages_, as they're going to be easier to interact with and overwrite.
 
 <hr>
 
 ## Reusing code
 
-If your prototype is pure HTML, it'll probably be a pain to maintain once you have 10+ pages and need to duplicate content. In web development, the solution is to use "partials" or "includes" and "layouts" to clean up repetitive code, so you can focus on the unique parts of each page.
+If your prototype is pure HTML, it'll probably be hard to maintain once you have 10+ pages and need to duplicate content. In web development, the solution is to use "partials" (or "includes") and "layouts" to clean up repetitive code, so you can focus on the unique parts of each page.
 
 Partial behavior can be accomplished in a few ways:
 
-* Use a server-side framework or language (Sinatra, PHP, Node.js with templates) that allows them
+* Use a server-side framework or language (Sinatra, PHP, Node.js with templates) that includes partials and layouts
 * Use a local tool that combines your templates into final HTML output (like Jekyll or Assemble)
-* Use JavaScript to render them (which still requires a simple webserver in some browsers, as browsers sometimes disallow JS form loading files directly off your drive)
+* Use JavaScript to render them (which still requires a simple webserver in some browsers, as browsers disallow JS form loading files directly off your hard drive)
 
 These all have their drawbacks for prototyping: They require configuration, extra tools, or specific language knowledge to accomplish.

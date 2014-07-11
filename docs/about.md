@@ -2,7 +2,7 @@
 
 - [Environment](#environment)
 - [LESS](#less)
-- [Libraries Included](#libraries-included)
+- [Libraries included](#libraries-included)
 - [Reusing code with partials](#reusing-code-with-partials)
 - [JS](#js)
 - [Sharing your work](#sharing-your-work)
@@ -35,7 +35,7 @@ Fortunately, Mac users have options:
 
 <hr>
 
-## Libraries Included
+## Libraries included
 
 In short, all of them. You have no performance concerns when prototyping, so Prestotype includes everything it can think of, up front. This includes:
 
