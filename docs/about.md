@@ -22,7 +22,7 @@ But, Chrome has a great debugger and your clients might use it to view your work
 Fortunately, Mac users have options:
 
 * [Mamp](http://www.mamp.info/en/) is a simple, installable app that runs a server on your computer. Save documents in Mamp's `htdocs` to view them in your browser.
-* [Anvil](http://anvilformac.com/) doesn't work on my machine, but it's simple and straightforward and might work on yours.
+* [Anvil](http://anvilformac.com/) is a simple menubar app for serving local files as .dev sites
 * [Setting up Apache on your Mac](http://ole.michelsen.dk/blog/setup-local-web-server-apache-php-macos-x-mavericks/) is easier than it sounds (ignore the PHP instructions), and allows you to serve sites from your /Sites directory and access them at http://localhost/my-site
 
 <hr>
