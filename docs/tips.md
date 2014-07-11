@@ -7,6 +7,7 @@ The best free text editor available at the moment is probably [Atom](https://ato
 - [Autoprefixer](https://atom.io/packages/autoprefixer)
 - [Color Picker](https://atom.io/packages/color-picker)
 - [Autocomplete +](https://atom.io/packages/autocomplete-plus)
+- [Bezier Curve Editor](https://atom.io/packages/bezier-curve-editor)
 
 ## Where to learn
 
@@ -20,8 +21,6 @@ The best free text editor available at the moment is probably [Atom](https://ato
 
 The best resource for learning about individual features of CSS, JS, and HTML is [MDN](https://developer.mozilla.org/en-US/). When Googling, prepend mdn to your query to get good results (example: [mdn position fixed](https://www.google.com/?q=mdn%20position%20fixed#q=mdn+position+fixed)).
 
-For learning about any of the included libraries, look at their doc sites for best results.
-
 Another excellent tool for quick reference is [Dash](http://kapeli.com/dash), which can be integrated into your text editor to help you quickly look up specific aspects of code.
 
 ## Generating code
@@ -30,7 +29,6 @@ Another excellent tool for quick reference is [Dash](http://kapeli.com/dash), wh
 - [Ceaser](http://matthewlein.com/ceaser/) builds specific CSS timing functions (used in transitions)
 - [CSS3Please](http://css3please.com/) is a cheat sheet for modern CSS properties
 - [CSSMatic](http://www.cssmatic.com/) has tools for generating gradients, noise, and shadow styles
-- [CSSArrowPlease](http://cssarrowplease.com/) for generating pure CSS triangles
 
 ## Debugging
 

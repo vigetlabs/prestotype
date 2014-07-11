@@ -1,6 +1,20 @@
 <header class="jumbotron">
-  <div class="container">
-    <h1><i>Presto</i>type</h1>
-    <hr>
-  </div>
+	<div class="container-fluid">
+		<h1 class="col-sm-4"><i>Presto</i>type</h1>
+		<div class="col-sm-8 text-right">
+			<br><br><br>
+			<div class="btn-group">
+				<a href="index.html" class="btn btn-default <% if (title == 'Index') { %>active<% } %>">
+					Index
+				</a>
+				<a href="templating.html" class="btn btn-default <% if (title == 'EJS Templating') { %>active<% } %>">
+					EJS Templating
+				</a>
+				<a href="components.html" class="btn btn-default <% if (title == 'Components') { %>active<% } %>">
+					Components
+				</a>
+			</div>
+		</div>
+	</div>
+	<hr>
 </header>

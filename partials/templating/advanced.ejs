@@ -1,0 +1,13 @@
+<p>
+  <% var date = new Date(); %>
+  Current date:
+  <%= date.getMonth() + 1 %>/<%= date.getDay() %>/<%= date.getFullYear() %>
+</p>
+<p>
+  Window width at pageload:
+  <%= $(window).width() %>px
+</p>
+<p>
+  Body font:
+  <%= $('body').css('font-family') %>
+</p>

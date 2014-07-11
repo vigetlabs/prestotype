@@ -1,0 +1,113 @@
+<!doctype html>
+	<head>
+		<title>Templating | Prestotype</title>
+		<link href="css/all.less" rel="stylesheet/less">
+		<script src="js/vendor/all.js"></script>
+		<script src="js/pages/templating.js"></script>
+	</head>
+
+	<body>
+		<div class="partial" data-partial="partials/header" data-title="EJS Templating"></div>
+
+		<div class="container-fluid">
+			<div class="col-sm-12">
+				<h3>Basic partial</h3>
+				<div class="partial" data-partial="partials/templating/basic"></div>
+
+<pre>
+&lt;p&gt;Include me!&lt;/p&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Send text to a partial</h3>
+				<div class="partial" data-partial="partials/templating/send-text" data-name="Jerry"></div>
+
+<pre>
+&lt;p&gt;
+  Welcome back, &lt;%= name %&gt;.
+&lt;/p&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Loop inside a partial</h3>
+				<div class="partial" data-partial="partials/templating/loop"></div>
+
+<pre>
+&lt;p&gt;
+  &lt;% for (i = 1; i == 10; i++) { %&gt;
+    &lt;%= i %&gt;
+  &lt;% } %&gt;
+&lt;/p&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Using conditionals</h3>
+				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="true"></div>
+				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="false"></div>
+
+<pre>
+&lt;p&gt;
+  &lt;% if (logged_in) { %&gt;
+    My account
+  &lt;% } else { %&gt;
+    Log out
+  &lt;% } %&gt;
+&lt;/p&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Send an array to a partial</h3>
+				<div class="partial" data-partial="partials/templating/send-array" data-offices="Boulder, HQ, Durham"></div>
+
+<pre>
+&lt;ul&gt;
+  &lt;% offices.split(',').each(function(officeName) { %&gt;
+    &lt;li&gt;
+      &lt;%= officeName %&gt;
+    &lt;/li&gt;
+  &lt;% )}; %&gt;
+&lt;/ul&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Include external data</h3>
+				<div class="partial" data-partial="partials/templating/external-data"></div>
+
+<pre>
+&lt;ul&gt;
+  &lt;% arrayForPartial.forEach(function(officeName) { %&gt;
+    &lt;li&gt;
+      &lt;%= officeName %&gt;
+    &lt;/li&gt;
+  &lt;% )}; %&gt;
+&lt;/ul&gt;
+</pre>
+
+        <br><hr><br>
+
+				<h3>Advanced templating with JS</h3>
+				<div class="partial" data-partial="partials/templating/advanced"></div>
+
+<pre>
+</pre>
+
+        <br><hr><br>
+
+				<h3>Bad partial <span class="label label-warning">Warning</span></h3>
+				<div class="partial" data-partial="partials/templating/bad"></div>
+
+<pre>
+&lt;div&gt;
+  &lt;p&gt;
+    Oops, this tag isn't closed....
+</pre>
+
+			</div>
+		</div>
+	</body>
+</html>
