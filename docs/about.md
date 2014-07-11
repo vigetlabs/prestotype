@@ -19,7 +19,7 @@ Safari and Firefox don't have these restrictions (that's good!).
 
 But, Chrome has a great debugger and your clients might use it to view your work (....that's bad.)
 
-Fortunately, Mac users have two easy options:
+Fortunately, Mac users have options:
 
 * [Mamp](http://www.mamp.info/en/) is a simple, installable app that runs a server on your computer. Save document in Mamp's `htdocs` to view them in your browser.
 * [Anvil](http://anvilformac.com/) doesn't work on my machine, but it's simple and straightforward and might work on yours.
