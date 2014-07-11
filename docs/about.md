@@ -72,7 +72,7 @@ To add a very simple behavior to the page, just add it inside the `$(document).r
 
 HOWEVER, if you're using partials on your page (see above section), this won't work - the `$(document).ready` block will execute your code on the page _before_ the partials load, which is no good and will effectively do nothing.
 
-Instead, you want you want to put your behaviors inside the `afterRender` function. This function on the entire page at first load, and then, as each partial loads, it runs again in the specific context of that partial. This is why it's important to include `$context` in all your `$()` queries.
+Instead, you want you want to put your behaviors inside the `afterRender` function. This runs on the entire page at first load, and then, as each partial loads, it runs again in the specific context of that partial. This is why it's important to include `$context` in all your `$()` queries.
 
 <hr>
 
