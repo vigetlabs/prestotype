@@ -43,6 +43,7 @@ In short, all of them. You have no performance concerns when prototyping, so Pre
 * [Underscore](http://underscorejs.org/), a low-level library for manipulating data (arrays, strings, objects)
 * [jQuery](http://api.jquery.com/), a common library for manipulating elements on the page.
 * [jQuery UI](http://api.jqueryui.com/), a widget and interaction library that includes datepickers, accordions, tabs, and much more. Themed to match Bootstrap (but you can download new themes or [design your own](http://jqueryui.com/themeroller/))
+* [Hammer.js](https://github.com/EightMedia/hammer.js/wiki), a library for simplifying touch interactions
 * [EJS](http://embeddedjs.com/), more on this later.
 
 <hr>
