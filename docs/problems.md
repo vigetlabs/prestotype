@@ -62,6 +62,6 @@ Partial behavior can be accomplished in a few ways:
 
 * Use a server-side framework or language (Sinatra, PHP, Node.js with templates) that includes partials and layouts
 * Use a local tool that combines your templates into final HTML output (like Jekyll or Assemble)
-* Use JavaScript to render them (which still requires a simple webserver in some browsers, as browsers disallow JS form loading files directly off your hard drive)
+* Use JavaScript to render them (which still requires a simple webserver in some browsers, as browsers don't allow JS to load files directly off your hard drive)
 
 These all have their drawbacks for prototyping: They require configuration, extra tools, or specific language knowledge to accomplish.
