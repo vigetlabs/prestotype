@@ -28,7 +28,6 @@ Another excellent tool for quick reference is [Dash](http://kapeli.com/dash), wh
 - [Ceaser](http://matthewlein.com/ceaser/) builds specific CSS timing functions (used in transitions)
 - [CSS3Please](http://css3please.com/) is a cheat sheet for modern CSS properties
 - [CSSMatic](http://www.cssmatic.com/) has tools for generating gradients, noise, and shadow styles
-- [CSSArrowPlease](http://cssarrowplease.com/) for generating pure CSS triangles
 
 ## Debugging
 
