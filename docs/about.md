@@ -29,7 +29,7 @@ Fortunately, Mac users have options:
 
 ## LESS
 
-`site.less` is a CSS file written in the [LESS language](http://lesscss.org/features/). You can write CSS in it just like you normally would, but you can also take advantage of LESS features like variables, selector nesting, nested media queries, and math operactions. Take a look at the file for examples.
+`site.less` is a CSS file written in the [LESS language](http://lesscss.org/features/). You can write CSS in it just like you normally would, but you can also take advantage of LESS features like variables, selector nesting, nested media queries, and math operations. Take a look at the file for examples.
 
 [LESS Hat](https://github.com/madebysource/lesshat/blob/master/README.md#list-of-mixins) is also included, and it adds a number of mixins that make writing modern CSS a little easier.
 
@@ -51,16 +51,16 @@ In short, all of them. You have no performance concerns when prototyping, so Pre
 
 ## Reusing code with partials
 
-Prestotype has a basic "partials" functionality that you can see on the index page, and it looks something like this:
+Prestotype has a basic "partials" functionality that you can see on the index page, and it looks like this:
 
 ```
-<div class="partial" data-partial="partials/footer" data-tall="true"></div>
+<div class="partial" data-partial="partials/copyright" data-year="2014"></div>
 ```
 
 Creating a div with a class of "partial" like this will cause a partial to be loaded from another file. Some fun facts about partials:
 
 * They're written using EJS, a simple template language that uses JavaScript inside `<% %>` blocks.
-* You can pass data to them with data-X parameters. For example, you could pass `data-pagetitle="About"` to a page title block, and inside the block, output it as `<%= pagetitle %>
+* You can pass data to them with data-X parameters. For example, you could pass `data-title="About"` to a page title block, and inside the block, output it as `<%= pagetitle %>
 * You can nest them inside each other.
 * If you nest a partial inside itself it will literally destroy the universe.
 
