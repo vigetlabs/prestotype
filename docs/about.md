@@ -59,7 +59,7 @@ Prestotype has a basic "partials" functionality that you can see on the index pa
 
 Creating a div with a class of "partial" like this will cause a partial to be loaded from another file. Some fun facts about partials:
 
-* They're written using EJS, a simple template language that uses JavaScript inside `<% %>` blocks.
+* They're written using [EJS](http://embeddedjs.com/), a simple template language that uses JavaScript inside `<% %>` blocks.
 * You can pass data to them with data-X parameters. For example, you could pass `data-title="About"` to a page title block, and inside the block, output it as `<%= pagetitle %>
 * You can nest them inside each other.
 * If you nest a partial inside itself it will literally destroy the universe.
