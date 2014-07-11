@@ -50,6 +50,8 @@ You have no performance concerns when prototyping, so don't worry about includin
 * Avoid libraries that collide. This is especially common in CSS, like with Bootstrap and Foundation. The more third-party CSS libraries you include, the more collisions you're likely to run into.
 * Avoid using libraries that want to generate entire documents (React, Angular, potentially Backbone). Prefer libraries that work best with _components_, not _pages_, as they're going to be easier to interact with and overwrite.
 
+Remember: you don't want libraries that solve the problem of "modern application development at the enterprise scale", you want libraries that solve the problem of "how do I turn this button into a datepicker already."
+
 <hr>
 
 ## Reusing code
