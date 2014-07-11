@@ -1,4 +1,4 @@
-# The problems of prototyping in HTML
+# The problems with prototyping in HTML
 
 Prestotype is a boilerplate that tries to solve some of the unique problems of prototyping designs in HTML/CSS/JS.
 
