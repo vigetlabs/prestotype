@@ -23,7 +23,7 @@ HTML/CSS/JS prototyping is a _specific type_ of web development that doesn't hav
 Keep this in mind when working and selecting tools and tutorials - ones that focus too much on these issues might be a waste of your time. Instead, you want options that:
 
 * Are easy to use
-* Have a drop-in features
+* Have drop-in features and widgets
 * Are easily styleable
 * Have strong documentation
 * Don't have incompatibility issues with other tools
