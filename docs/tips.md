@@ -20,8 +20,6 @@ The best free text editor available at the moment is probably [Atom](https://ato
 
 The best resource for learning about individual features of CSS, JS, and HTML is [MDN](https://developer.mozilla.org/en-US/). When Googling, prepend mdn to your query to get good results (example: [mdn position fixed](https://www.google.com/?q=mdn%20position%20fixed#q=mdn+position+fixed)).
 
-For learning about any of the included libraries, look at their doc sites for best results.
-
 Another excellent tool for quick reference is [Dash](http://kapeli.com/dash), which can be integrated into your text editor to help you quickly look up specific aspects of code.
 
 ## Generating code
