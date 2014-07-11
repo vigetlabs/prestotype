@@ -39,7 +39,7 @@ Fortunately, Mac users have options:
 
 In short, all of them. You have no performance concerns when prototyping, so Prestotype includes everything it can think of, up front. This includes:
 
-* [Bootstrap](http://getbootstrap.com/2.3.2/getting-started.html), a CSS and JS framework for building layouts and common features. Includes popovers, modals, carousels, and a deep CSS framework for laying out pages.
+* [Bootstrap](http://getbootstrap.com/2.3.2/getting-started.html), a CSS and JS framework for building layouts and common features. Includes popovers, modals, carousels, and a deep CSS framework for laying out pages. Bootstrap's CSS is included as a LESS file, so you can easily customize parts of it (start with `less/vendor/bootstrap/variables.less`)
 * [Animate.css](http://daneden.github.io/animate.css/), a small CSS library with a number of pre-made animations.
 * [Underscore](http://underscorejs.org/), a low-level library for manipulating data (arrays, strings, objects)
 * [jQuery](http://api.jquery.com/), a common library for manipulating elements on the page.

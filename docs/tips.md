@@ -7,6 +7,7 @@ The best free text editor available at the moment is probably [Atom](https://ato
 - [Autoprefixer](https://atom.io/packages/autoprefixer)
 - [Color Picker](https://atom.io/packages/color-picker)
 - [Autocomplete +](https://atom.io/packages/autocomplete-plus)
+- [Bezier Curve Editor](https://atom.io/packages/bezier-curve-editor)
 
 ## Where to learn
 
