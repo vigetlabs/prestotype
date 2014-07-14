@@ -20,5 +20,5 @@ loadSync([
 	'bootstrap',
 	'ejs',
 	'less',
-	'viget-partials'
+	'presto-partials'
 ]);

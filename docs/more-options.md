@@ -12,7 +12,7 @@ If you want to use a tool like this for HTML prototyping more regularly, I sugge
 
 ### PHP
 
-PHP is incredibly easy to jump right into and sprinkle partials, variables, and reusable functionality into. It's also fairly ubiquitous and easy to serve (use [Mamp](http://www.mamp.info/en/) on your own machine, and clients.viget.com to share). The most appealing thing about PHP is that you can just rename a file from `.html` to `.php` and start working, making it a fast and easy way to enhance your prototypes.
+PHP is incredibly easy to jump right into and sprinkle partials, variables, and reusable functionality into. It's also fairly ubiquitous and easy to serve (use [Mamp](http://www.mamp.info/en/) on your own machine, and a PHP-enabled server to share). The most appealing thing about PHP is that you can just rename a file from `.html` to `.php` and start working, making it a fast and easy way to enhance your prototypes.
 
 ### Rendered output
 
