@@ -94,6 +94,19 @@
 				<div class="partial" data-partial="partials/templating/advanced"></div>
 
 <pre>
+&lt;p&gt;
+  &lt;% var date = new Date(); %&gt;
+  Current date:
+  &lt;%= date.getMonth() + 1 %&gt;/&lt;%= date.getDay() %&gt;/&lt;%= date.getFullYear() %&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Window width at pageload:
+  &lt;%= $(window).width() %&gt;px
+&lt;/p&gt;
+&lt;p&gt;
+  Body font:
+  &lt;%= $('body').css('font-family') %&gt;
+&lt;/p&gt;
 </pre>
 
         <br><hr><br>
