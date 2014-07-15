@@ -101,6 +101,6 @@ This is necessary because it ensures that your code executes _after_ all partial
 There are a few easy ways to share work from Prestotype:
 
 * Upload it a server
-* Host the files with Dropbox
+* Serve it from Dropbox. Simply move your prototype into the Public directory. Right-click on `index.html` and choose "Copy Public URL". Share that with whomever.
 * If you're on a Viget staff network or VPNed in, you can share a link with othe people on the network by including your IP (ie: http://192.168.7.1/my-site). This is great for quickly sharing work with a co-worker, or testing on different devices.
 * You _can_ share your site via ZIP file, but note that it won't work in some browsers unless the recipient serves it via a web server like Mamp or OS X Apache.
