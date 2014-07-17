@@ -12,43 +12,46 @@
 		<div class="container-fluid">
 			<div class="col-sm-12">
 				<h3>Basic partial</h3>
-				<div class="partial" data-partial="partials/templating/basic"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/basic"&gt;&lt;/div&gt;
+...
 &lt;p&gt;Include me!&lt;/p&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/basic"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Send text to a partial</h3>
-				<div class="partial" data-partial="partials/templating/send-text" data-name="Jerry"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/send-text" data-name="Jerry"&gt;&lt;/div&gt;
+...
 &lt;p&gt;
   Welcome back, &lt;%= name %&gt;.
 &lt;/p&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/send-text" data-name="Jerry"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Loop inside a partial</h3>
-				<div class="partial" data-partial="partials/templating/loop"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/loop"&gt;&lt;/div&gt;
+...
 &lt;p&gt;
   &lt;% for (i = 1; i == 10; i++) { %&gt;
     &lt;%= i %&gt;
   &lt;% } %&gt;
 &lt;/p&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/loop"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Using conditionals</h3>
-				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="true"></div>
-				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="false"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/conditional" data-logged_in="true"&gt;&lt;/div&gt;
+&lt;div class="partial" data-partial="partials/templating/conditional" data-logged_in="false"&gt;&lt;/div&gt;
+...
 &lt;p&gt;
   &lt;% if (logged_in) { %&gt;
     My account
@@ -57,13 +60,15 @@
   &lt;% } %&gt;
 &lt;/p&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="true"></div>
+				<div class="partial" data-partial="partials/templating/conditional" data-logged_in="false"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Send an array to a partial</h3>
-				<div class="partial" data-partial="partials/templating/send-array" data-offices="Boulder, HQ, Durham"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/send-array" data-offices="Boulder, HQ, Durham"&gt;&lt;/div&gt;
+...
 &lt;ul&gt;
   &lt;% offices.split(',').each(function(officeName) { %&gt;
     &lt;li&gt;
@@ -72,13 +77,15 @@
   &lt;% )}; %&gt;
 &lt;/ul&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/send-array" data-offices="Boulder, HQ, Durham"></div>
 
-        <br><hr><br>
 
-				<h3>Include external data</h3>
-				<div class="partial" data-partial="partials/templating/external-data"></div>
+				<br><hr><br>
 
+				<h3>Include data from a JS file</h3>
 <pre>
+&lt;div class="partial" data-partial="partials/templating/external-data"&gt;&lt;/div&gt;
+...
 &lt;ul&gt;
   &lt;% arrayForPartial.forEach(function(officeName) { %&gt;
     &lt;li&gt;
@@ -87,13 +94,14 @@
   &lt;% )}; %&gt;
 &lt;/ul&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/external-data"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Advanced templating with JS</h3>
-				<div class="partial" data-partial="partials/templating/advanced"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/advanced"&gt;&lt;/div&gt;
+...
 &lt;p&gt;
   &lt;% var date = new Date(); %&gt;
   Current date:
@@ -108,17 +116,19 @@
   &lt;%= $('body').css('font-family') %&gt;
 &lt;/p&gt;
 </pre>
+				<div class="partial" data-partial="partials/templating/advanced"></div>
 
-        <br><hr><br>
+				<br><hr><br>
 
 				<h3>Bad partial <span class="label label-warning">Warning</span></h3>
-				<div class="partial" data-partial="partials/templating/bad"></div>
-
 <pre>
+&lt;div class="partial" data-partial="partials/templating/bad"&lt;&lt;/div&lt;
+...
 &lt;div&gt;
   &lt;p&gt;
     Oops, this tag isn't closed....
 </pre>
+				<div class="partial" data-partial="partials/templating/bad"></div>
 
 			</div>
 		</div>
