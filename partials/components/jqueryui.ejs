@@ -5,7 +5,10 @@
     </h3>
   </header>
   <div class="panel-body">
-    Datepicker: <input class="datepicker">
+    <p>
+      Datepicker: <input class="datepicker">
+    </p>
+    <pre>$('.datepicker').datepicker();</pre>
 
     <hr>
 
@@ -26,12 +29,22 @@
         <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
       </div>
     </div>
+    <pre>$('.jquery-tabs').tabs();</pre>
 
     <hr>
 
     <div class="slider"></div>
     <br>
-    <input class="slider-value" value="Slide to set">
+    <p>
+      <input class="slider-value" value="Slide to set">
+    </p>
+    <pre>$('.slider').slider({
+  min: 1,
+  max: 500,
+  slide: function(event, ui) {
+    $('.slider-value').val(ui.value);
+  }
+});</pre>
 
     <hr>
 
@@ -41,5 +54,10 @@
         <input class="autocomplete">
       </p>
     </div>
+    <pre>$('.autocomplete').autocomplete({
+  source: [
+    // names
+  ]
+});</pre>
   </div>
 </div>

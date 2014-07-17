@@ -3,8 +3,35 @@ afterPartialsLoad(function() {
 	$('.has-tooltip').tooltip();
 
 	// animated
+	var updateExample = function() {
+		var html = $('.animate-me')[0].outerHTML
+			 .replace(/(\n|\r|\s+)/g, ' ')
+			 .replace(/</g, '&lt;')
+			 .replace(/>/g, '&gt;');
+		$('.animate-html').html(html);
+	};
+	updateExample();
+
 	$('.animate-button').on('click', function() {
-		$('.animate-me').attr('class', 'animated animate-me well ' + $(this).data('animation'));
+		$('.animate-me').attr('class', 'animated animate-me well ' + $(this).text());
+		updateExample();
+	});
+
+	// jquery transit
+	$('.transit-button').on('click', function() {
+		var $button = $(this);
+		var transformation = eval('({' + $button.text() + '})');
+
+		if ($button.hasClass('btn-primary')) {
+			_(transformation).each(function(value, key) {
+				return transformation[key] = $button.data('origin');
+			});
+		}
+
+		$button.toggleClass('btn-primary', !$button.hasClass('btn-primary'));
+		$('.transit-me').transition(transformation);
+		$('.transit-code').html("$('.transit-me').transition(" + $button.text() + ")");
+
 	});
 
 	// jqueryUI

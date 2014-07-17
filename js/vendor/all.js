@@ -16,6 +16,7 @@ var loadSync = function(filenames) {
 loadSync([
 	'jquery',
 	'jquery-ui',
+	'jquery.transit',
 	'underscore',
 	'bootstrap',
 	'ejs',
