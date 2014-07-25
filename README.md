@@ -1,7 +1,7 @@
 ## Prestotype - An HTML prototyping boilerplate
 
-1. [The problems with prototyping in HTML](docs/problems.md)
-2. [About Prestotype](docs/about.md)
+1. [About Prestotype](docs/about.md) (tools, how-tos, general info - start here)
+2. [The problems with prototyping in HTML](docs/problems.md)
 3. [More options](docs/more-options.md)
 4. [General prototyping tips](docs/tips.md)
 
