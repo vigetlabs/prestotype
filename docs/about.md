@@ -24,6 +24,7 @@ Fortunately, Mac users have options:
 * [Mamp](http://www.mamp.info/en/) is a simple, installable app that runs a server on your computer. Save documents in Mamp's `htdocs` to view them in your browser.
 * [Anvil](http://anvilformac.com/) is a simple menubar app for serving local files as .dev sites
 * [Setting up Apache on your Mac](http://ole.michelsen.dk/blog/setup-local-web-server-apache-php-macos-x-mavericks/) is easier than it sounds (ignore the PHP instructions), and allows you to serve sites from your /Sites directory and access them at http://localhost/my-site
+* Python that ships with OSX also has a [simple, lightweight server](http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python). If you are comfortable with the Terminal, navigate to the folder containing your prototype and issue the command `python -m SimpleHTTPServer`.
 
 <hr>
 
